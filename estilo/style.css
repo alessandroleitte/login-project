@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Special+Gothic+Expanded+One&display=swap');  
+
+/*
+    Paleta de cores 
+    AZUL CLARO: #215BA6
+    AZUL 1: #021F59
+    AZUL 2: #011640
+    AZUL 3: #010D26
+    MARROM: #A66832
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html{
+    background-color: #010D26; 
+    height: 100vh;
+    width: 100vw;
+}
+
+#login{
+    width: 50vw;
+    color: #010D26;
+    background-color:#eef4fc;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}   
+
+.login h1{
+    font-family: "Gochi Hand", sans-serif;
+}
+.login p{
+    text-align: justify;
+    padding: 10px;
+}
+.img{
+    background: black url(../imagens/guitar.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 25vh;
+}
+
+.form input[type=text], .form input[type=password] {
+    width: 80%;
+    height: 25px;
+    margin-left: 40px;
+    display: inline;
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: 3px solid #A66832;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #010D26;
+}
+.form input[type=submit], .form input[type=button]{
+    width: 95%;
+    height: 25px;
+    margin: 3px;
+    border-radius: 5px;
+}
+.nimg{
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    margin: 3px 0 3px 2px;
+    padding: 3px;
+    background: black url(../imagens/user.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    border: 3px solid #A66832;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.pimg{
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    margin: 3px 2px 3px 2px;
+    padding: 3px;
+    background: black url(../imagens/password.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    border: 3px solid #A66832;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.form input[type=submit]{
+    background-color:#215BA6;
+    color: white;
+}
+.form input[type=submit]:hover{
+    background-color:#547bae;
+    color: white;
+    border: 1px solid white;
+}
+.form input[type=button]{
+    color: #215BA6;
+    font-weight: lighter;
+    font-size: 0.8em;
+    border: 2px solid #215BA6;
+}
+.form input[type=button]:hover{
+    border: 2px solid #010D26;
+    color: #010D26;
+}
